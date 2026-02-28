@@ -1,122 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700&display=swap");
 
-.bg-container {
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.section {
     background-color: lightpink;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-box {
+    background: white;
     width: 100%;
-    padding:20px;
-
-
-}
-.bg-card {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    border-radius:25px;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 20px;
 }
 
-
-.hed {
-    font-size: 25px;
+.title {
     color: orangered;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+}
+
+.text {
+    font-size: 16px;
 }
 
 .emoji {
-    padding-top: 50px;
-    text-align: center;
-
-}
-
-.para {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    font-size: 15px;
-}
-
-.but {
-    background-color: lightpink;
-    border-radius: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    font-size: 14px;
-    border-width: 0px;
-    color: white;
-}
-
-
-
-
-.bg-container2 {
-    background-color: lightpink;
-    min-height: 100vh;
-    width: 100%;
-    padding: 20px;
-
-
-
-}
-
-
-
-
-.bg-card2 {
-    background-color: azure;
-    height: 360px;
-    width: 90%;
-    max-width:900px;
-    margin: auto;
-    border-radius: 25px;
-    padding: 20px;
-
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
 .reason-card {
-    height: auto;
-    width: 100%;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: hwb(208 65% 24%);
-    border-style: shadow;
-
-
-}
-
-.para2 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    font-size: 13px;
-}
-
-
-.bg-container3 {
-    background-color: lightpink;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
+    background-color: #cfe2f3;
     padding: 20px;
-
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
-.img {
-    width:100%;
-    max-width:200px;
-    height:auto;
-
-}
-.but2 {
-    background-color: rgb(193, 42, 65);
+.btn-custom {
+    background-color: lightpink;
+    border: none;
+    padding: 10px 20px;
     border-radius: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    font-size: 14px;
-    border-width: 0px;
     color: white;
-    border-color:white;
-    border-width:1px;
+    margin-top: 10px;
 }
 
+.btn-custom-dark {
+    background-color: rgb(193, 42, 65);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+.custom-img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile Improvements */
+@media (max-width: 768px) {
+
+    .card-box {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
