@@ -1,39 +1,30 @@
 
-let sec1 = document.getElementById("section1");
-let sec2 = document.getElementById("section2");
-let sec3 = document.getElementById("section3");
-let sec4 = document.getElementById("section4");
-let sec5 = document.getElementById("section5");
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-// Hide all sections except first
-sec2.style.display = "none";
-sec3.style.display = "none";
-sec4.style.display = "none";
-sec5.style.display = "none";
+    // Smooth scroll function
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 
-// Button 1 → Show Section 2
-document.getElementById("but1").addEventListener("click", function () {
-    sec1.style.display = "none";
-    sec2.style.display = "block";
+    // Button Click Events
+    document.getElementById("btn1").addEventListener("click", function () {
+        scrollToSection("section2");
+    });
+
+    document.getElementById("btn2").addEventListener("click", function () {
+        scrollToSection("section3");
+    });
+
+    document.getElementById("btn3").addEventListener("click", function () {
+        scrollToSection("section4");
+    });
+
+    document.getElementById("btn4").addEventListener("click", function () {
+        alert("You are the best thing that ever happened to me ❤️");
+    });
+
 });
-
-// Button 2 → Show Section 3
-document.getElementById("but2").addEventListener("click", function () {
-    sec2.style.display = "none";
-    sec3.style.display = "block";
-});
-
-// Button 3 → Show Section 4
-document.getElementById("but3").addEventListener("click", function () {
-    sec3.style.display = "none";
-    sec4.style.display = "block";
-});
-
-// Button 4 → Show Section 5
-document.getElementById("but4").addEventListener("click", function () {
-    sec4.style.display = "none";
-    sec5.style.display = "block";
-});
-
-
-
+</script>
