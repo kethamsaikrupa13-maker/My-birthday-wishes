@@ -1,5 +1,4 @@
 
-<script>
 document.addEventListener("DOMContentLoaded", function () {
 
     // Smooth scroll function
@@ -27,4 +26,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-</script>
+
+
