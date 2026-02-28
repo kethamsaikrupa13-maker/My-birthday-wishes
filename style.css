@@ -2,24 +2,19 @@
 
 .bg-container {
     background-color: lightpink;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    padding: 180px;
-
+    min-height: 100vh;
+    width: 100%;
+    padding:20px;
 
 
 }
-
 .bg-card {
-    background-color: white;
-    height: 300px;
-    width: 900px;
-    margin-left: 80px;
-    border-radius: 25px;
-    padding: 15px;
-
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    border-radius:25px;
 }
+
 
 .hed {
     font-size: 25px;
@@ -57,10 +52,9 @@
 
 .bg-container2 {
     background-color: lightpink;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    padding: 180px;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
 
 
 
@@ -72,16 +66,17 @@
 .bg-card2 {
     background-color: azure;
     height: 360px;
-    width: 900px;
-    margin-left: 80px;
+    width: 90%;
+    max-width:900px;
+    margin: auto;
     border-radius: 25px;
     padding: 20px;
 
 }
 
 .reason-card {
-    height: 25vh;
-    width: 25vw;
+    height: auto;
+    width: 100%;
     margin: 10px;
     border-radius: 20px;
     background-color: hwb(208 65% 24%);
@@ -103,13 +98,14 @@
     height: 100vh;
     width: 100vw;
     background-size: cover;
-    padding: 180px;
+    padding: 20px;
 
 }
 
 .img {
-    height: 200px;
-    width: 200px;
+    width:100%;
+    max-width:200px;
+    height:auto;
 
 }
 .but2 {
@@ -123,3 +119,4 @@
     border-color:white;
     border-width:1px;
 }
+
