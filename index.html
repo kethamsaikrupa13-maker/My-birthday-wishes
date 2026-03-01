@@ -42,7 +42,7 @@
         <h2 class="title text-center">Here's why you're incredible</h2>
 
         <div class="row mt-4">
-            <div class="col-12 col-md-4">
+            <div class="col-md-4">
                 <div class="reason-card text-center">
                     <div class="emoji">✨</div>
                     <h4>Your Kindness</h4>
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-4">
+            <div class="col-md-4">
                 <div class="reason-card text-center">
                     <div class="emoji">😊</div>
                     <h4>Your Smile</h4>
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-4">
+            <div class="col-md-4">
                 <div class="reason-card text-center">
                     <div class="emoji">🌟</div>
                     <h4>Your Spirit</h4>
@@ -96,15 +96,23 @@
         <div class="emoji">🎂</div>
         <h2 class="title">My Birthday Wish For You</h2>
         <p class="text">
-            May your year be filled with joy, laughter, and dreams come true.
+            May your year be filled with joy and dreams come true.
         </p>
         <p class="text">Happy Birthday, my love! ❤️</p>
-        <button class="btn-custom-dark">Celebrate!</button>
+        <button class="btn-custom-dark" id="celebrateBtn">Celebrate!</button>
         <p class="text mt-3">Made with ❤️ just for you</p>
+
+        <!-- 🎵 Song -->
+        <audio id="bgMusic">
+            <source src="uppena.mp3" type="audio/mpeg">
+        </audio>
     </div>
 </section>
 
+<!-- 🎆 Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
 
