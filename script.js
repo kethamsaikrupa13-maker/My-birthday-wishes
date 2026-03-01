@@ -16,11 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     celebrateBtn.addEventListener("click", function () {
 
-        // Play Song
+        // 🎵 Play Music
         music.currentTime = 0;
-        music.play();
 
-        // Fireworks Animation
+        music.play().then(() => {
+            console.log("Music Playing...");
+        }).catch(error => {
+            alert("Check if uppena.mp3 file is in same folder!");
+            console.log(error);
+        });
+
+        // 🎆 Confetti
         var duration = 5 * 1000;
         var end = Date.now() + duration;
 
@@ -35,10 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 requestAnimationFrame(frame);
             }
         })();
-
     });
-
 });
+
 
 
 
