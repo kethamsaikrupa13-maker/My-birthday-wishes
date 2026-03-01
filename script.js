@@ -1,14 +1,11 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Smooth scroll function
     function scrollToSection(sectionId) {
         document.getElementById(sectionId).scrollIntoView({
             behavior: "smooth"
         });
     }
 
-    // Button Click Events
     document.getElementById("btn1").addEventListener("click", function () {
         scrollToSection("section2");
     });
@@ -21,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollToSection("section4");
     });
 
-   document.getElementById("btn4").addEventListener("click", function () {
-    scrollToSection("section5");
+    document.getElementById("btn4").addEventListener("click", function () {
+        scrollToSection("section5");
+    });
 
 });
 
-});
 
 
 
