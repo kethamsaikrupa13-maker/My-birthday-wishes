@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollToSection("section4");
     });
 
-    document.getElementById("btn4").addEventListener("click", function () {
-         scrollTOSection("section5");
-    });
+   document.getElementById("btn4").addEventListener("click", function () {
+    scrollToSection("section5");
 
 });
+
 
 
 
