@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Happy Birthday</title>
+    <title>Happy Birthday ❤️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
     <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
@@ -29,9 +32,7 @@
     <div class="card-box text-center">
         <div class="emoji">🎉</div>
         <h2 class="title">Happy Birthday!</h2>
-        <p class="text">
-            On your special day, I want you to know how amazing you are.
-        </p>
+        <p class="text">On your special day, I want you to know how amazing you are.</p>
         <button class="btn-custom" id="btn2">What makes you special?</button>
     </div>
 </section>
@@ -80,7 +81,7 @@
         <h2 class="title">Remember When...</h2>
 
         <img class="img-fluid custom-img"
-            src="https://raw.githubusercontent.com/CodeWithVinz/Happy-Birthday-Crush/main/crush.webp">
+        src="https://raw.githubusercontent.com/CodeWithVinz/Happy-Birthday-Crush/main/crush.webp">
 
         <p class="text mt-3">
             Every moment with you becomes a cherished memory.
@@ -95,27 +96,22 @@
     <div class="card-box text-center">
         <div class="emoji">🎂</div>
         <h2 class="title">My Birthday Wish For You</h2>
-        <p class="text">
-            May your year be filled with joy and dreams come true.
-        </p>
+        <p class="text">May your year be filled with joy and dreams come true.</p>
         <p class="text">Happy Birthday, my love! ❤️</p>
+
         <button class="btn-custom-dark" id="celebrateBtn">Celebrate!</button>
         <p class="text mt-3">Made with ❤️ just for you</p>
 
-        <!-- 🎵 Song -->
-        <audio id="bgMusic">
+        <!-- Audio -->
+        <audio id="bgMusic" preload="auto">
             <source src="uppena.mp3" type="audio/mpeg">
         </audio>
     </div>
 </section>
 
-<!-- 🎆 Confetti Library -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
-
 
 
 
