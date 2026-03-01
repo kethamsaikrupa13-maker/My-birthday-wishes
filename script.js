@@ -22,9 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
    document.getElementById("btn4").addEventListener("click", function () {
-    scrollTOSection("section5");
+    scrollToSection("section5");
 
 });
+
 
 
 
