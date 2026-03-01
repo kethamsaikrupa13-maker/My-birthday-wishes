@@ -22,9 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("btn4").addEventListener("click", function () {
-        alert("You are the best thing that ever happened to me ❤️");
+         scrollTOSection("section5");
     });
 
 });
+
 
 
