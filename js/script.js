@@ -2,10 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function scrollToSection(sectionId) {
         document.getElementById(sectionId).scrollIntoView({
-            behavior: "smooth"
-        });
-    }
-
     document.getElementById("btn1").onclick = () => scrollToSection("section2");
     document.getElementById("btn2").onclick = () => scrollToSection("section3");
     document.getElementById("btn3").onclick = () => scrollToSection("section4");
@@ -43,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })();
     });
 });
+
 
 
 
