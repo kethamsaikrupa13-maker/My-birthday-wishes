@@ -1,49 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({
-    document.getElementById("btn1").onclick = () => scrollToSection("section2");
-    document.getElementById("btn2").onclick = () => scrollToSection("section3");
-    document.getElementById("btn3").onclick = () => scrollToSection("section4");
-    document.getElementById("btn4").onclick = () => scrollToSection("section5");
+function scrollToSection(sectionId) {
+document.getElementById(sectionId).scrollIntoView({
+behavior: "smooth"
+});
+}
 
-    const celebrateBtn = document.getElementById("celebrateBtn");
-    const music = document.getElementById("bgMusic");
+document.getElementById("btn1").onclick = () => scrollToSection("section2");
+document.getElementById("btn2").onclick = () => scrollToSection("section3");
+document.getElementById("btn3").onclick = () => scrollToSection("section4");
+document.getElementById("btn4").onclick = () => scrollToSection("section5");
 
-    celebrateBtn.addEventListener("click", function () {
+const celebrateBtn = document.getElementById("celebrateBtn");
+const music = document.getElementById("bgMusic");
 
-        // 🎵 Play Music
-        music.currentTime = 0;
+celebrateBtn.addEventListener("click", function () {
 
-        music.play().then(() => {
-            console.log("Music Playing...");
-        }).catch(error => {
-            alert("Check if uppena.mp3 file is in same folder!");
-            console.log(error);
-        });
+music.currentTime = 0;
 
-        // 🎆 Confetti
-        var duration = 5 * 1000;
-        var end = Date.now() + duration;
-
-        (function frame() {
-            confetti({
-                particleCount: 6,
-                spread: 70,
-                origin: { y: 0.6 }
-            });
-
-            if (Date.now() < end) {
-                requestAnimationFrame(frame);
-            }
-        })();
-    });
+music.play().then(() => {
+console.log("Music Playing...");
+}).catch(error => {
+alert("Check if uppena.mp3 file is in music folder!");
+console.log(error);
 });
 
+var duration = 5 * 1000;
+var end = Date.now() + duration;
 
+(function frame() {
 
+confetti({
+particleCount: 6,
+spread: 70,
+origin: { y: 0.6 }
+});
 
+if (Date.now() < end) {
+requestAnimationFrame(frame);
+}
 
+})();
 
+});
 
+});
 
